@@ -1,18 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: malord <malord@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/28 15:23:06 by malord            #+#    #+#             */
-/*   Updated: 2022/03/29 10:17:39 by malord           ###   ########.fr       */
+/*   Created: 2022/03/29 10:29:36 by malord            #+#    #+#             */
+/*   Updated: 2022/03/29 10:48:58 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && <= 122))
-		return (c);
-	return (0);
+	size_t	i;
+	size_t	c;
+
+	i = 0;
+	c = 0;
+	while (src[c] != '\0')
+		c++;
+	if (size != 0)
+	{
+		while (src[i] != '\0' && i < size - 1)
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = '\0';
+	}
+	return (c);
 }
