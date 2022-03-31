@@ -6,9 +6,11 @@
 /*   By: malord <malord@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 10:05:09 by malord            #+#    #+#             */
-/*   Updated: 2022/03/29 10:10:17 by malord           ###   ########.fr       */
+/*   Updated: 2022/03/31 10:48:44 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {
