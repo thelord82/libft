@@ -6,20 +6,20 @@
 /*   By: malord <malord@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 09:42:31 by malord            #+#    #+#             */
-/*   Updated: 2022/03/31 10:44:25 by malord           ###   ########.fr       */
+/*   Updated: 2022/03/31 14:38:07 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isspace(char c)
+static int	ft_isspace(char c)
 {
 	if ((c >= 9 && c <= 13) || (c == 32))
 		return (1);
 	return (0);
 }
 
-int	ft_isnumber(char c)
+static int	ft_isnumber(char c)
 {
 	if (c >= 48 && c <= 57)
 		return (1);

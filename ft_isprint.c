@@ -6,15 +6,15 @@
 /*   By: malord <malord@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 10:01:16 by malord            #+#    #+#             */
-/*   Updated: 2022/03/31 10:48:20 by malord           ###   ########.fr       */
+/*   Updated: 2022/03/31 14:44:04 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 
 int	ft_isprint(int n)
 {
 	if (n >= 32 && n <= 127)
-		return (n);
+		return (1);
 	return (0);
 }
