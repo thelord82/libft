@@ -1,20 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: malord <malord@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/29 10:13:25 by malord            #+#    #+#             */
-/*   Updated: 2022/04/01 09:07:06 by malord           ###   ########.fr       */
+/*   Created: 2022/04/01 11:31:51 by malord            #+#    #+#             */
+/*   Updated: 2022/04/01 11:42:47 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	if (n >= 97 && n <= 122)
-		return (n - 32);
-	return (n);
+	unsigned int	i;
+
+	i = 0;
+	if (n == 0)
+		return (0);
+	while (s1[i] && s2[i] && n > i + 1)
+	{
+		if (!(s1[i] == s2[i]))
+			break ;
+		i++;
+	}
+	return (s1[i] - s2[i]);
 }

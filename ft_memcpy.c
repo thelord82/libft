@@ -1,20 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: malord <malord@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/29 10:13:25 by malord            #+#    #+#             */
-/*   Updated: 2022/04/01 09:07:06 by malord           ###   ########.fr       */
+/*   Created: 2022/04/01 16:56:36 by malord            #+#    #+#             */
+/*   Updated: 2022/04/01 17:32:57 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	if (n >= 97 && n <= 122)
-		return (n - 32);
-	return (n);
+	size_t	i;
+
+	i = 0;
+	while (src && i < n)
+	{
+		*(char *)(dest + i) = *(char *)(src + i);
+		i++;
+	}
+	return (dest);
 }

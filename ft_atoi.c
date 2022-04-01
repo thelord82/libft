@@ -6,7 +6,7 @@
 /*   By: malord <malord@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 09:42:31 by malord            #+#    #+#             */
-/*   Updated: 2022/03/31 14:38:07 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/01 09:34:42 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,6 @@
 static int	ft_isspace(char c)
 {
 	if ((c >= 9 && c <= 13) || (c == 32))
-		return (1);
-	return (0);
-}
-
-static int	ft_isnumber(char c)
-{
-	if (c >= 48 && c <= 57)
 		return (1);
 	return (0);
 }
@@ -44,7 +37,7 @@ int	ft_atoi(const char *str)
 		neg = -neg;
 		i++;
 	}
-	while (str[i] && ft_isnumber(str[i]) == 1)
+	while (str[i] && ft_isdigit(str[i]) == 1)
 	{
 		nombre = nombre * 10 + (str[i] - '0');
 		i++;

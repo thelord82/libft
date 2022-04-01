@@ -6,11 +6,11 @@
 /*   By: malord <malord@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 09:36:36 by malord            #+#    #+#             */
-/*   Updated: 2022/03/31 14:41:40 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/01 09:04:20 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
+#include "libft.h"
 
 int	ft_isascii(int n)
 {

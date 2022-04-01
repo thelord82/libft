@@ -6,11 +6,11 @@
 /*   By: malord <malord@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 15:23:06 by malord            #+#    #+#             */
-/*   Updated: 2022/03/31 14:41:07 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/01 09:04:05 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

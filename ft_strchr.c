@@ -6,12 +6,19 @@
 /*   By: malord <malord@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 15:56:30 by malord            #+#    #+#             */
-/*   Updated: 2022/03/31 15:58:02 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/01 10:31:15 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
+#include "libft.h"
 
-char	*strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
+	while (*s)
+	{
+		if (*s == (unsigned char)c)
+			return ((char *)s);
+		s++;
+	}
+	return (NULL);
 }
