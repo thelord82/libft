@@ -1,0 +1,53 @@
+{
+    "42header.username": "malord",
+    "42header.email": "malord@student.42quebec.com",
+    "codam-norminette-3.displayErrorName": true,
+    "workbench.colorTheme": "Atom Black",
+    "editor.tokenColorCustomizations": {
+
+        "comments": "#00ffff",
+        "types": "#ffae00",
+        "strings": "#eeff00",
+
+        "textMateRules": [
+            {
+                "scope": ["constant.language", "constant.other", "variable.other", "variable", "variable.language",
+                     "entity.other.attribute-name", "entity.name.tag", "punctuation.separator", "punctuation.terminator", "punctuation.accessor"]
+                "settings": {
+                    "foreground": "#ffffff",
+                }
+            },
+            {
+                "scope":["keyword.operator", "keyword.control", "keyword.operator.logical", "keyword.operator.comparison"]
+                "settings": {
+                    "foreground": "#fb81ff",
+                }
+            }
+            {
+                "scope":"string.quoted.double",
+                "settings": {
+                    "foreground": "#eeff00",
+                }
+            }
+            {
+                "scope":["constant.numeric", "storage.type"]
+                "settings": {
+                    "foreground": "#ffae00",
+                    
+                }
+            }
+            {
+                "scope": "storage.modifier",
+                "settings": {
+                    "foreground": "#fb81ff"
+                }
+            },
+            {
+                "scope": ["support", "support.type", "entity.name"], 
+                "settings": {
+                    "foreground": "#00ff37"
+                }
+            },            
+        ]
+    },
+}
