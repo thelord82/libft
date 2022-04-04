@@ -1,14 +1,15 @@
 #include<stdio.h>
 #include<string.h>
 #include<ctype.h>
+#include<stdlib.h>
 #include "libft.h"
 
 int	main(void)
 {
 	//ft_atoi
-	/*char c[50] = "101010";
+	/*char c[50] = "++101010";
 	printf("%d\n", ft_atoi(c));
-	printf("%lu", strlen("fatalatapouette"));*/
+	printf("%d", atoi(c));*/
 
 	//ft_strlcat
 	/*char src[] = "Ah non";
@@ -18,13 +19,15 @@ int	main(void)
 	printf("%lu", strlcat(dst, src, 17));*/
 
 	//ft_strchr
-	/*const char str[] = "www.google.com";
-	const char ch = 'a';
-	char *ret;
+	/*char str[] = "";
+	char ch;
 
-	ret = ft_strchr(str, ch);
+	ch = '\0';
+	
 
-	printf("String apres: %c est: %s\n", ch, ret);*/
+	printf("String apres: %c est: %s\n", ch, ft_strchr(str, ch));
+	printf("String apres: %c est: %s\n", ch, strchr(str, ch));
+	printf("%c", '\0');*/
 
 	//ft_strrchr
 	/*const char str[] = "www.google.com";
@@ -36,11 +39,11 @@ int	main(void)
 	printf("Derniere occurence de %c est: %s\n", ch, ret);*/
 
 	//ft_strncmp
-	/*char str[] = "scandi nave";
-	char str2[] = "scandinave ";
+	/*char str[] = "test\200";
+	char str2[] = "test\0";
 
-	printf("%d\n", ft_strncmp(str, str2, 7));
-	printf("%d", strncmp(str, str2, 7));*/
+	printf("%d\n", ft_strncmp(str, str2, 6));
+	printf("%d", strncmp(str, str2, 6));*/
 
 	//ft_memchr
 	/*const char str[] = "www.google.com";
@@ -62,21 +65,37 @@ int	main(void)
 	printf("%d", memcmp(str, str2, ft_strlen(str)));*/
 
 	//ft_strnstr
-	/*const char *largestring = "Foo Bar Baz";
-	const char *smallstring = "";
+	/*const char *largestring = "lorem ipsum dolor sit amet";
+	const char *smallstring = "dolor";
 
-	printf("Test FT: %s\n", ft_strnstr(largestring, smallstring, 11));
-	printf("Test OG: %s", strnstr(largestring, smallstring, 11));*/
+	printf("Test FT: %s\n", ft_strnstr(largestring, smallstring, 15));
+	printf("Test OG: %s", strnstr(largestring, smallstring, 15));*/
 
 	//ft_memmove
-	char src[] = "fatalatapouette";
-	char dest[50] = "arbre";
+	/*char src[] = "lorem ipsum dolor sit amet";
+	char *dest;
+	dest = src + 1;
 
-	printf ("String copie : %s\n", ft_memmove(dest, src, ft_strlen(src)));
+	printf ("String copie FT: %s\n", ft_memmove(dest, src, 8));
+	printf ("String copie OG: %s\n", memmove(dest, src, 8));*/
 
 	//ft_memcpy
 	/*char src[] = "sweet";
 	char dest[] = "allo mon ti coco";
 
 	printf ("String copie : %s\n", memcpy(dest, src, ft_strlen(src)));*/
+
+	//ft_calloc
+	/*char	*str;
+	str = ft_calloc(30, 1);
+	if (!str)
+		write(1, "NULL", 4);
+	else
+		write(1, str, 30);*/
+	//ft_strdup
+	char	str[] = "lorem ipsum dolor sit amet";
+	//char	*str_dup;
+	printf("String copie FT: %s\n", ft_strdup(str));
+	printf("String copie OG: %s\n", strdup(str));
+	printf("%lu", ft_strlen(str) + 1);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malord <malord@student.42.fr>              +#+  +:+       +#+        */
+/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 09:42:31 by malord            #+#    #+#             */
-/*   Updated: 2022/04/01 09:34:42 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/04 09:35:00 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,15 @@ int	ft_atoi(const char *str)
 	neg = 1;
 	if (str[i] == '\0')
 		return (0);
-	while (str[i] && ft_isspace(str[i]) == 1)
+	while (str[i] && (ft_isspace(str[i]) == 1))
 		i++;
 	if (str[i] == '-')
 	{
 		neg = -neg;
 		i++;
 	}
+	else if (str[i] == '+')
+		i++;
 	while (str[i] && ft_isdigit(str[i]) == 1)
 	{
 		nombre = nombre * 10 + (str[i] - '0');

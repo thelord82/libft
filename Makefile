@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: malord <malord@student.42.fr>              +#+  +:+       +#+         #
+#    By: malord <malord@student.42quebec.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/30 09:39:10 by malord            #+#    #+#              #
-#    Updated: 2022/04/01 18:02:43 by malord           ###   ########.fr        #
+#    Updated: 2022/04/04 15:06:28 by malord           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,7 @@ SRCS		=	ft_atoi.c				\
 				ft_split.c				\
 				ft_strchr.c				\
 				ft_strdup.c				\
-				ft_striteri.c				\
+				ft_striteri.c			\
 				fT_strjoin.c			\
 				ft_strlcat.c			\
 				ft_strlcpy.c			\

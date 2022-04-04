@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malord <malord@student.42.fr>              +#+  +:+       +#+        */
+/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 15:56:30 by malord            #+#    #+#             */
-/*   Updated: 2022/04/01 10:31:15 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/04 10:52:37 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s)
+	while (*s != (unsigned char)c)
 	{
-		if (*s == (unsigned char)c)
-			return ((char *)s);
+		if (!*s)
+			return (NULL);
 		s++;
 	}
-	return (NULL);
+	return ((char *)s);
 }
