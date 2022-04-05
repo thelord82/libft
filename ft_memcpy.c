@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malord <malord@student.42.fr>              +#+  +:+       +#+        */
+/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 16:56:36 by malord            #+#    #+#             */
-/*   Updated: 2022/04/01 17:32:57 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/05 08:54:14 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,18 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t	i;
+	char		*dst;
+	const char	*sc;
 
-	i = 0;
-	while (src && i < n)
+	dst = dest;
+	sc = src;
+	if (!dest && !src)
+		return (NULL);
+	while (n--)
 	{
-		*(char *)(dest + i) = *(char *)(src + i);
-		i++;
+		*dst = *sc;
+		dst++;
+		sc++;
 	}
 	return (dest);
 }

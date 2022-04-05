@@ -13,7 +13,7 @@
       "environment": [],
       "program": "/Users/malord/42/libft/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
-      "MIMode": "gdb",
+      "MIMode": "lldb",
       "externalConsole": true
     }
   ]

@@ -56,6 +56,9 @@ int	main(void)
 
 	printf("Avec ft_memchr : String apres: %c est: %s\n", ch, ret);
 	printf("Avec memchr : String apres: %c est: %s\n", ch, ret2);*/
+	;
+	printf("Test %s\n", ft_memchr(((void *)0), '\0', 0x20));
+	printf("Test %s\n", memchr(((void *)0), '\0', 0x20));
 
 	//ft_memcmp
 	/*char str[] = "allo ";
@@ -72,18 +75,20 @@ int	main(void)
 	printf("Test OG: %s", strnstr(largestring, smallstring, 15));*/
 
 	//ft_memmove
-	/*char src[] = "lorem ipsum dolor sit amet";
+	/*char src[] = "bonjour";
 	char *dest;
 	dest = src + 1;
 
-	printf ("String copie FT: %s\n", ft_memmove(dest, src, 8));
-	printf ("String copie OG: %s\n", memmove(dest, src, 8));*/
+	printf ("String copie FT: %s\n", ft_memmove(dest, src, 7));
+	printf ("String copie OG: %s\n", memmove(dest, src, 7));*/
+
 
 	//ft_memcpy
-	/*char src[] = "sweet";
+	/*char src[] = "";
 	char dest[] = "allo mon ti coco";
 
-	printf ("String copie : %s\n", memcpy(dest, src, ft_strlen(src)));*/
+	printf ("String copie FT: %s\n", ft_memcpy(((void *)0), ((void *)0), 3));
+	printf ("String copie OG: %s\n", memcpy(((void *)0), ((void *)0), 3));*/
 
 	//ft_calloc
 	/*char	*str;
@@ -93,9 +98,8 @@ int	main(void)
 	else
 		write(1, str, 30);*/
 	//ft_strdup
-	char	str[] = "lorem ipsum dolor sit amet";
-	//char	*str_dup;
+	/*char	str[] = "lorem ipsum dolor sit amet";
 	printf("String copie FT: %s\n", ft_strdup(str));
 	printf("String copie OG: %s\n", strdup(str));
-	printf("%lu", ft_strlen(str) + 1);
+	printf("%lu", ft_strlen(str) + 1);*/
 }
