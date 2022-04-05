@@ -55,10 +55,10 @@ int	main(void)
 	ret2 = memchr(str, ch, 4);
 
 	printf("Avec ft_memchr : String apres: %c est: %s\n", ch, ret);
-	printf("Avec memchr : String apres: %c est: %s\n", ch, ret2);*/
-	;
+	printf("Avec memchr : String apres: %c est: %s\n", ch, ret2);
+	
 	printf("Test %s\n", ft_memchr(((void *)0), '\0', 0x20));
-	printf("Test %s\n", memchr(((void *)0), '\0', 0x20));
+	printf("Test %s\n", memchr(((void *)0), '\0', 0x20));*/
 
 	//ft_memcmp
 	/*char str[] = "allo ";
@@ -102,4 +102,8 @@ int	main(void)
 	printf("String copie FT: %s\n", ft_strdup(str));
 	printf("String copie OG: %s\n", strdup(str));
 	printf("%lu", ft_strlen(str) + 1);*/
+
+	//ft_substr
+	char st[] = "Ceci est une phrase";
+	printf("%s\n", ft_substr(st, 6, 9));
 }
