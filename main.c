@@ -104,6 +104,11 @@ int	main(void)
 	printf("%lu", ft_strlen(str) + 1);*/
 
 	//ft_substr
-	char st[] = "Ceci est une phrase";
-	printf("%s\n", ft_substr(st, 6, 9));
+	/*char st[] = "Ceci est une phrase";
+	printf("%s\n", ft_substr(st, 21, 2));*/
+
+	//ft_strtrim
+	char str[] = "          ";
+	char find[] = " ";
+	printf("%s\n", ft_strtrim(str, find));
 }
