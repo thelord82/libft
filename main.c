@@ -108,7 +108,12 @@ int	main(void)
 	printf("%s\n", ft_substr(st, 21, 2));*/
 
 	//ft_strtrim
-	char str[] = "          ";
+	/*char str[] = "          ";
 	char find[] = " ";
-	printf("%s\n", ft_strtrim(str, find));
+	printf("%s\n", ft_strtrim(str, find));*/
+
+	//ft_strjoin
+	char str[] = "Snack Bar";
+	char str2[] = " Chez Raymond";
+	printf("%s\n", ft_strjoin(str, str2));
 }
