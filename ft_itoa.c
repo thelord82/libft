@@ -5,78 +5,54 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/04 16:12:32 by malord            #+#    #+#             */
-/*   Updated: 2022/04/04 16:12:35 by malord           ###   ########.fr       */
+/*   Created: 2022/04/07 10:39:31 by malord            #+#    #+#             */
+/*   Updated: 2022/04/07 17:00:06 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include <stdlib.h>
-/*void	ft_putnbr(int nb)
-{
-	if (nb == -2147483648)
-	{
-		write (1, "-2", 2);
-		nb = 147483648;
-	}
-	if (nb < 0)
-	{
-		ft_putchar('-');
-		nb = -nb;
-	}
-	if (nb >= 10)
-	{
-		ft_putnbr(nb / 10);
-	}
-	nb = nb % 10 + 48;
-	write(1, &nb, 1);
-}*/
-/*int tab_length(int nbr)
-{
-  int i = 1;
-  if (nbr < 0)
-  {
-    nbr = -nbr;
-    i++;
-  }
-  while (nbr >= 10)
-  {
-    nbr /= 10;
-    i++;
-  }
-  return (i);
-}
-char *ft_itoa(int nbr)
-{
-  int nb;
-  int i;
-  char *tab;
+#include "libft.h"
 
-  nb = nbr;
-  i = tab_length(nbr) - 1;
-  tab = (char *)malloc(sizeof(char) * tab_length(nbr) + 1);
-  while (i >= 0)
-  {
-    if (nbr >= 10)
-      ft_itoa(nbr / 10);
-    tab[i] = nbr % 10 + 48;
-    i--;
-    nbr /= 10;
-  }
-  tab[i] = '\0';
-  return (tab);
-}
-int main()
+static int	tab_length(int nbr)
 {
-  char *test;
-  int i = 0;
+	int	i;
 
-  test = ft_itoa(453228);
-  while (test[i])
-  {
-    printf("%c", test[i]);
-    i++;
-  }
-  printf("\n");
-  return(0);
-}*/
+	i = 1;
+	if (nbr < 0)
+	{
+		nbr = -nbr;
+		i++;
+	}
+	while (nbr >= 10)
+	{
+		nbr /= 10;
+		i++;
+	}
+	return (i);
+}
+
+char	*ft_itoa(int n)
+{
+	char	*conv;
+	long	i;
+
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	conv = (char *)ft_calloc((tab_length(n)) + 1, sizeof(char));
+	i = tab_length(n) - 1;
+	if (!conv)
+		return (NULL);
+	if (n < 0)
+	{
+		n = -n;
+		conv[0] = '-';
+	}
+	while (i > 0)
+	{
+		conv[i] = (n % 10) + 48;
+		i--;
+		n /= 10;
+	}
+	if (conv[i] == 0)
+			conv[i] = n % 10 + 48;
+	return (conv);
+}

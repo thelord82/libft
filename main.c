@@ -113,7 +113,15 @@ int	main(void)
 	printf("%s\n", ft_strtrim(str, find));*/
 
 	//ft_strjoin
-	char str[] = "Snack Bar";
+	/*char str[] = "Snack Bar";
 	char str2[] = " Chez Raymond";
-	printf("%s\n", ft_strjoin(str, str2));
+	printf("%s\n", ft_strjoin(str, str2));*/
+
+	//ft_split
+	//char str[] = "mottons dattes mottons";
+	//printf("%s\n", ft_split(str, ' ');
+
+	//ft_itoa
+	//int i = -2147483648LL;
+	printf("%s\n", ft_itoa(-2147483648));
 }
