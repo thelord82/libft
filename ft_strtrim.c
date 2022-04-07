@@ -6,7 +6,7 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:24:03 by malord            #+#    #+#             */
-/*   Updated: 2022/04/06 16:20:22 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/06 22:48:33 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,36 +14,14 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char			*trim;
-	unsigned int	i;
-	unsigned int	s;
-	unsigned int	e;
+	size_t	end;
 
-	i = 0;
-	s = 0;
-	e = ft_strlen(s1) - 1;
-	while (set[i])
-	{
-		if (set[i] == s1[s])
-		{
-			s++;
-			i = 0;
-		}
-		else
-			i++;
-	}
-	i = 0;
-	while (set[i] && e > s)
-	{
-		if (set[i] == s1[e])
-		{
-			e--;
-			i = 0;
-		}
-		else
-			i++;
-	}
-	i = 0;
-	trim = ft_substr(s1, s, (e - s) + 1);
-	return (trim);
+	if (!s1 || !set)
+		return (NULL);
+	while (*s1 && ft_strchr(set, *s1) != NULL)
+		s1++;
+	end = ft_strlen(s1);
+	while (end && ft_strchr(set, s1[end]) != NULL)
+		end--;
+	return (ft_substr(s1, 0, end + 1));
 }
