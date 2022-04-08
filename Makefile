@@ -6,7 +6,7 @@
 #    By: malord <malord@student.42quebec.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/30 09:39:10 by malord            #+#    #+#              #
-#    Updated: 2022/04/04 15:06:28 by malord           ###   ########.fr        #
+#    Updated: 2022/04/07 19:46:33 by malord           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -130,5 +130,11 @@ bonus: $(NAME) $(BOBJS)
 	@make clean
 
 # Remove before submission
-test:
+war:
 	@cd ../libft-war-machine/ ; bash grademe.sh
+
+tripouille:
+	@cd ../libftTester/ ; make
+
+unit:
+	@cd ../libft-unit-test/ ; make f
