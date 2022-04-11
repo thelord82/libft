@@ -6,8 +6,23 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:25:30 by malord            #+#    #+#             */
-/*   Updated: 2022/04/04 16:13:29 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/11 16:09:59 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_putendl_fd(char *s, int fd)
+{
+	size_t	i;
+
+	i = 0;
+	if (!s)
+		return ;
+	while (s[i])
+	{
+		write (fd, &s[i], 1);
+		i++;
+	}
+	write (fd, "\n", 1);
+}

@@ -6,8 +6,13 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:24:49 by malord            #+#    #+#             */
-/*   Updated: 2022/04/04 16:13:13 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/11 16:03:07 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}

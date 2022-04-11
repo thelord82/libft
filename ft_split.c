@@ -6,12 +6,11 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:24:11 by malord            #+#    #+#             */
-/*   Updated: 2022/04/08 21:09:09 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/11 10:59:44 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	ft_wordcount(char const *s, char c)
 {
@@ -41,25 +40,16 @@ static int	ft_wordlen(char const *s, char c, int cpt)
 	}
 	return (l);
 }
-/*{
-	int	l;
-
-	l = 0;
-	while (cpt >= 0 && s[cpt] != c)
-	{
-		cpt--;
-		l++;
-	}
-	return (l);
-}*/
 
 static	char	*ft_trimword(char const *s, char c, int cpt)
 {
-	int	j;
+	int		j;
 	char	*nstr;
 
 	j = 0;
-	nstr = ft_calloc(ft_wordlen(s + cpt, c, cpt) + 1, sizeof(char));
+	nstr = ft_calloc(ft_wordlen(s, c, cpt) + 1, sizeof(char));
+	if (!nstr)
+		return (NULL);
 	while (s[cpt])
 	{
 		if (s[cpt] != c)
@@ -78,31 +68,13 @@ static	char	*ft_trimword(char const *s, char c, int cpt)
 	}
 	return (nstr);
 }
-/*{
-	int	i;
-	int	wlen;
-	int	j;
-	char	*word;
-
-	i = 0;
-	wlen = ft_wordlen(s, c, cpt);
-	j = (cpt - wlen) + 1;
-	word = ft_calloc(wlen + 1, sizeof(char));
-	while (j <= cpt)
-	{
-		word[i] = s[j];
-		i++;
-		j++;
-	}
-	return (word);
-}*/
 
 char	**ft_split(char const *s, char c)
 {
 	char	**result;
-	int	i;
-	int	j;
-	int index;
+	int		i;
+	int		j;
+	int		index;
 
 	if (!s)
 		return (NULL);
@@ -123,44 +95,5 @@ char	**ft_split(char const *s, char c)
 		}
 		i++;
 	}
-	/*while (s[i])
-	{
-		if (s[i] != c)
-		{
-			if (s[i + 1] == c || s[i + 1] == '\0')
-			{
-				result[j] = ft_trimword(s, c, i);
-				j++;
-			}
-		}
-		i++;
-	}*/
 	return (result);
 }
-/*int main()
-{
-	printf("%d\n", ft_wordlen("bleu blanc rouge", ' ', 11));
-	printf("%d\n", ft_wordcount("bleu blanc rouge", ' '));
-	printf("%s\n", ft_trimword("bleu blanc rouge", ' ', 12));
-	//printf("%d\n", ft_wordlens("bleu blanc rouge", 11, ' '));
-}*/
-/*result[j++] = ft_trimword(s, c, i);
-			while (s[i] != c && s[i] != '\0')
-				i++;
-			while (s[i] == c)
-				i++;
-		}
-		else
-			i++;
-	}
-	return (result);*/
-
-	/*if (s[i] != c)
-		{
-			if (s[i + 1] == c || s[i + 1] == '\0')
-			{
-				result[j] = ft_trimword(s, c, i);
-				j++;
-			}
-		}
-		i++;*/
