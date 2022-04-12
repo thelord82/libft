@@ -6,7 +6,7 @@
 #    By: malord <malord@student.42quebec.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/30 09:39:10 by malord            #+#    #+#              #
-#    Updated: 2022/04/07 19:46:33 by malord           ###   ########.fr        #
+#    Updated: 2022/04/12 16:27:37 by malord           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -84,24 +84,24 @@ OBJS		=	ft_atoi.o				\
 				ft_substr.o				\
 				ft_tolower.o			\
 				ft_toupper.o
-BSRCS		=	ft_lstadd_back_bonus.c	\
-				ft_lstadd_bonus.c		\
+BSRCS		=	ft_lstadd_back.c		\
+				ft_lstadd_front.c		\
 				ft_lstclear_bonus.c		\
 				ft_lstdelone_bonus.c	\
 				ft_lstiter_bonus.c		\
-				ft_lstlast_bonus.c		\
+				ft_lstlast.c			\
 				ft_lstmap_bonus.c		\
-				ft_lstnew_bonus.c		\
-				ft_lstsize_bonus.c
-BOBJS		=	ft_lstadd_back_bonus.o	\
-				ft_lstadd_bonus.o		\
+				ft_lstnew.c				\
+				ft_lstsize.c
+BOBJS		=	ft_lstadd_back.o		\
+				ft_lstadd_front.o		\
 				ft_lstclear_bonus.o		\
 				ft_lstdelone_bonus.o	\
 				ft_lstiter_bonus.o		\
-				ft_lstlast_bonus.o		\
+				ft_lstlast.o			\
 				ft_lstmap_bonus.o		\
-				ft_lstnew_bonus.o		\
-				ft_lstsize_bonus.o
+				ft_lstnew.o				\
+				ft_lstsize.o
 
 # Targets
 all: $(NAME) clean
