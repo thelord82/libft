@@ -6,7 +6,7 @@
 #    By: malord <malord@student.42quebec.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/30 09:39:10 by malord            #+#    #+#              #
-#    Updated: 2022/04/12 20:19:10 by malord           ###   ########.fr        #
+#    Updated: 2022/04/13 08:21:02 by malord           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,9 +50,8 @@ SRCS		=	ft_atoi.c				\
 				ft_substr.c				\
 				ft_tolower.c			\
 				ft_toupper.c
-BSRCS		=	ft_lstlast.c			\
-				ft_lstadd_back.c		\
-				ft_lstadd_front.c		\
+BSRCS		=	ft_lstadd_front.c		\
+				ft_lstlast.c			\
 				ft_lstclear_bonus.c		\
 				ft_lstdelone_bonus.c	\
 				ft_lstiter_bonus.c		\
