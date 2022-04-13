@@ -6,7 +6,7 @@
 #    By: malord <malord@student.42quebec.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/30 09:39:10 by malord            #+#    #+#              #
-#    Updated: 2022/04/13 08:21:02 by malord           ###   ########.fr        #
+#    Updated: 2022/04/13 11:21:22 by malord           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,14 +50,17 @@ SRCS		=	ft_atoi.c				\
 				ft_substr.c				\
 				ft_tolower.c			\
 				ft_toupper.c
-BSRCS		=	ft_lstadd_front.c		\
-				ft_lstlast.c			\
-				ft_lstclear_bonus.c		\
-				ft_lstdelone_bonus.c	\
-				ft_lstiter_bonus.c		\
-				ft_lstmap_bonus.c		\
+
+BSRCS		=	ft_lstlast.c			\
+				ft_lstadd_back.c		\
+				ft_lstadd_front.c		\
+				ft_lstclear.c			\
+				ft_lstdelone.c			\
 				ft_lstnew.c				\
+				ft_lstiter.c			\
+				ft_lstmap.c				\
 				ft_lstsize.c
+
 OBJS		= 	${SRCS:.c=.o}
 BOBJS		=	${BSRCS:.c=.o}
 
@@ -84,9 +87,9 @@ re: fclean all
 
 # Bonus points
 bonus: $(NAME) $(BOBJS)
-	@$(CC) -c $(CFLAGS) $(BOBJS)
-	@ar -rs $(NAME) $(BOBJS)
-	@make clean
+	@ar -crs $(NAME) $(BOBJS)
+	@$(CC) -c $(CFLAGS) $(BSRCS)
+	
 
 # Remove before submission
 war:
