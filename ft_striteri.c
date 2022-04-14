@@ -6,9 +6,11 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:24:37 by malord            #+#    #+#             */
-/*   Updated: 2022/04/11 15:52:50 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/14 14:52:56 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// Applies the function f to each char of s
 
 #include "libft.h"
 

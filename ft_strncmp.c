@@ -6,9 +6,12 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 11:31:51 by malord            #+#    #+#             */
-/*   Updated: 2022/04/04 11:05:58 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/14 15:06:27 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* Compares n bytes of strings s1 and s2, returns 0 if equal or not zero
+	with the ASCII values of the first different character */
 
 #include "libft.h"
 

@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malord <malord@student.42.fr>              +#+  +:+       +#+        */
+/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 10:29:36 by malord            #+#    #+#             */
-/*   Updated: 2022/04/01 09:06:34 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/14 15:03:04 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// Copy string src into string dst. Returns length of src it tried to copy
+
 #include "libft.h"
-#include<stdlib.h>
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

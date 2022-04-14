@@ -6,9 +6,12 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:23:40 by malord            #+#    #+#             */
-/*   Updated: 2022/04/08 08:27:07 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/14 15:12:32 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* Allocates memory to return the string starting at start, size of len bytes
+	Returns a pointer to the new string. */
 
 #include "libft.h"
 

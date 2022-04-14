@@ -6,9 +6,12 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:24:03 by malord            #+#    #+#             */
-/*   Updated: 2022/04/06 22:48:33 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/14 15:10:55 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* Removes characters from set in the beginning or the end of s1. Returns
+	the trimmed string. */
 
 #include "libft.h"
 

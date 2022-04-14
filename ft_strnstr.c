@@ -6,9 +6,13 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 15:38:30 by malord            #+#    #+#             */
-/*   Updated: 2022/04/04 13:23:32 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/14 15:08:52 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* Locates the first occurence of string to_find in string str, while n bytes
+	are searched. Returns pointer to the first character if found, NULL if not
+	found, or str if to_find is empty */
 
 #include "libft.h"
 
