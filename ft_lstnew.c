@@ -6,9 +6,11 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 11:52:08 by malord            #+#    #+#             */
-/*   Updated: 2022/04/13 12:50:45 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/14 10:17:16 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// Adds a new element to the list
 
 #include "libft.h"
 

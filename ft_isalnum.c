@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malord <malord@student.42.fr>              +#+  +:+       +#+        */
+/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 08:58:11 by malord            #+#    #+#             */
-/*   Updated: 2022/04/01 09:03:51 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/14 10:08:27 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//Checks if the int in parameter is alphanumeric
 
 #include "libft.h"
 

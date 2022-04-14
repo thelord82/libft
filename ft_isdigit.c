@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malord <malord@student.42.fr>              +#+  +:+       +#+        */
+/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 08:40:04 by malord            #+#    #+#             */
-/*   Updated: 2022/04/01 09:33:42 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/14 10:09:08 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// Checks if n parameter is a digit
 
 #include "libft.h"
 

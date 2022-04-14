@@ -6,9 +6,11 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 16:56:36 by malord            #+#    #+#             */
-/*   Updated: 2022/04/05 08:54:14 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/14 10:22:25 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// Copies memory area src to memory area dest, while n bytes. MAY OVERLAP.
 
 #include "libft.h"
 

@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malord <malord@student.42.fr>              +#+  +:+       +#+        */
+/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 09:36:36 by malord            #+#    #+#             */
-/*   Updated: 2022/04/01 09:04:20 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/14 10:32:53 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// Checks if the value of parameter int n is in the ASCII table
 
 #include "libft.h"
 

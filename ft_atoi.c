@@ -6,12 +6,15 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 09:42:31 by malord            #+#    #+#             */
-/*   Updated: 2022/04/04 09:35:00 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/14 10:03:45 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// Converts in int value a string containing digits
+
 #include "libft.h"
 
+// Check for the 6 whitespaces
 static int	ft_isspace(char c)
 {
 	if ((c >= 9 && c <= 13) || (c == 32))

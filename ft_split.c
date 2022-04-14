@@ -6,12 +6,16 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:24:11 by malord            #+#    #+#             */
-/*   Updated: 2022/04/11 10:59:44 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/14 10:30:53 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* Takes a string and return a 2D array, containing each string contained
+	between a given separating character*/
+
 #include "libft.h"
 
+// Returns the number of sub strings in between sep chars for calloc
 static int	ft_wordcount(char const *s, char c)
 {
 	int	i;
@@ -28,6 +32,7 @@ static int	ft_wordcount(char const *s, char c)
 	return (w);
 }
 
+// Returns the length of a sub string for calloc
 static int	ft_wordlen(char const *s, char c, int cpt)
 {
 	int	l;
@@ -41,6 +46,7 @@ static int	ft_wordlen(char const *s, char c, int cpt)
 	return (l);
 }
 
+// Returns the sub string itself
 static	char	*ft_trimword(char const *s, char c, int cpt)
 {
 	int		j;

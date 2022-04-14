@@ -6,9 +6,11 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:25:30 by malord            #+#    #+#             */
-/*   Updated: 2022/04/11 16:09:59 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/14 10:26:22 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// Writes the string s in the given file descriptor, plus \n
 
 #include "libft.h"
 

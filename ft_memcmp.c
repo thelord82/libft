@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malord <malord@student.42.fr>              +#+  +:+       +#+        */
+/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 14:33:18 by malord            #+#    #+#             */
-/*   Updated: 2022/04/01 15:07:08 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/14 10:20:51 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// Compares strings s1 et s2, while n bytes
 
 #include "libft.h"
 

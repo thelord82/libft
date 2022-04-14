@@ -6,9 +6,12 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:23:06 by malord            #+#    #+#             */
-/*   Updated: 2022/04/07 12:24:17 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/14 10:05:12 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* Allocate the necessary memory with malloc, then fills it with \0 
+	characters for security*/
 
 #include "libft.h"
 
