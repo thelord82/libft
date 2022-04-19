@@ -6,7 +6,7 @@
 #    By: malord <malord@student.42quebec.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/30 09:39:10 by malord            #+#    #+#              #
-#    Updated: 2022/04/19 09:20:15 by malord           ###   ########.fr        #
+#    Updated: 2022/04/19 11:03:23 by malord           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -88,14 +88,6 @@ re: fclean all
 bonus: $(NAME) $(BOBJS)
 	@ar -crs $(NAME) $(BOBJS)
 	@$(CC) -c $(CFLAGS) $(BSRCS)
-	
 
-# Remove before submission
-war:
-	@cd ../libft-war-machine/ ; bash grademe.sh
-
-tripouille:
-	@cd ../libftTester/ ; make
-
-unit:
-	@cd ../libft-unit-test/ ; make f
+cleanbs: clean
+	@$(RM) $(BOBJS)
