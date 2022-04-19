@@ -6,14 +6,13 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 14:29:08 by malord            #+#    #+#             */
-/*   Updated: 2022/04/14 10:04:08 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/19 08:32:33 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// Fills the string with \0 characters
-
 #include "libft.h"
 
+// Fills the string with \0 characters
 void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, '\0', n);

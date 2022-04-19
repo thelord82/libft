@@ -6,14 +6,13 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 11:05:18 by malord            #+#    #+#             */
-/*   Updated: 2022/04/14 10:24:44 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/19 08:36:36 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// Fills string s with character value of c, while n bytes
-
 #include "libft.h"
 
+// Fills string s with character value of c, while n bytes
 void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t			i;

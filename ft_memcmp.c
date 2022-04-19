@@ -6,14 +6,13 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 14:33:18 by malord            #+#    #+#             */
-/*   Updated: 2022/04/14 10:20:51 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/19 08:36:04 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// Compares strings s1 et s2, while n bytes
-
 #include "libft.h"
 
+// Compares strings s1 et s2, while n bytes
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t	i;

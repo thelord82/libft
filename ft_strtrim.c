@@ -6,15 +6,14 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:24:03 by malord            #+#    #+#             */
-/*   Updated: 2022/04/14 15:10:55 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/19 08:39:02 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Removes characters from set in the beginning or the end of s1. Returns
-	the trimmed string. */
-
 #include "libft.h"
 
+/* Removes characters from set in the beginning or the end of s1. Returns
+	the trimmed string. */
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	end;

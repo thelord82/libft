@@ -6,15 +6,14 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 16:59:22 by malord            #+#    #+#             */
-/*   Updated: 2022/04/14 10:23:54 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/19 08:36:27 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Copies n bytes of string src to string dest. Strings may overlap. 
-	Non-destructive*/
-
 #include "libft.h"
 
+/* Copies n bytes of string src to string dest. Strings may overlap. 
+	Non-destructive*/
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	size_t	i;

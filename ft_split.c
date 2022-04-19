@@ -6,12 +6,9 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:24:11 by malord            #+#    #+#             */
-/*   Updated: 2022/04/14 10:30:53 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/19 08:37:27 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/* Takes a string and return a 2D array, containing each string contained
-	between a given separating character*/
 
 #include "libft.h"
 
@@ -75,6 +72,8 @@ static	char	*ft_trimword(char const *s, char c, int cpt)
 	return (nstr);
 }
 
+/* Takes a string and return a 2D array, containing each string contained
+	between a given separating character*/
 char	**ft_split(char const *s, char c)
 {
 	char	**result;

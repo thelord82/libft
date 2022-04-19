@@ -6,11 +6,9 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/07 10:39:31 by malord            #+#    #+#             */
-/*   Updated: 2022/04/14 10:11:34 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/19 08:34:20 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-// Converts an int to a string or array of chars
 
 #include "libft.h"
 
@@ -33,6 +31,7 @@ static int	tab_length(int nbr)
 	return (i);
 }
 
+// Converts an int to a string or array of chars
 char	*ft_itoa(int n)
 {
 	char	*conv;

@@ -6,15 +6,14 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:24:26 by malord            #+#    #+#             */
-/*   Updated: 2022/04/14 15:04:54 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/19 08:38:25 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Applies the function f to string s in parameters and puts it in a new string
-	which is returned */
-
 #include "libft.h"
 
+/* Applies the function f to string s in parameters and puts it in a new string
+	which is returned */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*result;

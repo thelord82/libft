@@ -6,14 +6,13 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:23:26 by malord            #+#    #+#             */
-/*   Updated: 2022/04/14 14:50:26 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/19 08:37:48 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// Allocates memory for the copy of s1, returns a pointer to the copy
-
 #include "libft.h"
 
+// Allocates memory for the copy of s1, returns a pointer to the copy
 char	*ft_strdup(const char *s1)
 {
 	char	*copy;

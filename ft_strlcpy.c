@@ -6,14 +6,13 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 10:29:36 by malord            #+#    #+#             */
-/*   Updated: 2022/04/14 15:03:04 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/19 08:38:11 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// Copy string src into string dst. Returns length of src it tried to copy
-
 #include "libft.h"
 
+// Copy string src into string dst. Returns length of src it tried to copy
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;

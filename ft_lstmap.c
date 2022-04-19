@@ -6,15 +6,14 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 11:19:07 by malord            #+#    #+#             */
-/*   Updated: 2022/04/14 10:16:40 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/19 08:35:33 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Returns a new list containing the elements of the list in parameter, 
-	in which the function in parameter has been applied*/
-
 #include"libft.h"
 
+/* Returns a new list containing the elements of the list in parameter, 
+	in which the function in parameter has been applied*/
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new;

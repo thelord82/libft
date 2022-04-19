@@ -6,15 +6,14 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:23:50 by malord            #+#    #+#             */
-/*   Updated: 2022/04/14 14:54:06 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/19 08:21:37 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Allocates memory for the combination of s1 and s2, then returns pointer
-	to the new string containing the two*/
-
 #include "libft.h"
 
+/* Allocates memory for the combination of s1 and s2, then returns pointer
+	to the new string containing the two*/
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*nstr;

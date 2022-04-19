@@ -6,7 +6,7 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 08:40:35 by malord            #+#    #+#             */
-/*   Updated: 2022/04/14 15:21:44 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/19 09:32:30 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <unistd.h>
 # include <ctype.h>
 # include <string.h>
+# include <stdint.h>
 
 typedef struct s_list
 {

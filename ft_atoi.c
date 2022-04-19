@@ -6,11 +6,9 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 09:42:31 by malord            #+#    #+#             */
-/*   Updated: 2022/04/14 10:03:45 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/19 08:32:29 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-// Converts in int value a string containing digits
 
 #include "libft.h"
 
@@ -22,6 +20,7 @@ static int	ft_isspace(char c)
 	return (0);
 }
 
+// Converts in int value a string containing digits
 int	ft_atoi(const char *str)
 {
 	int	i;

@@ -6,14 +6,13 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:25:42 by malord            #+#    #+#             */
-/*   Updated: 2022/04/14 10:26:44 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/19 08:37:01 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// Writes the number in parameter in the given file descrptor
-
 #include "libft.h"
 
+// Writes the number in parameter in the given file descrptor
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)

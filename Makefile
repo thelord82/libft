@@ -6,7 +6,7 @@
 #    By: malord <malord@student.42quebec.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/30 09:39:10 by malord            #+#    #+#              #
-#    Updated: 2022/04/13 11:21:22 by malord           ###   ########.fr        #
+#    Updated: 2022/04/19 09:20:15 by malord           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,7 +63,6 @@ BSRCS		=	ft_lstlast.c			\
 
 OBJS		= 	${SRCS:.c=.o}
 BOBJS		=	${BSRCS:.c=.o}
-
 
 # Targets
 all: $(NAME) clean

@@ -6,15 +6,14 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 10:59:43 by malord            #+#    #+#             */
-/*   Updated: 2022/04/14 15:09:49 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/19 08:38:54 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Locates last occurence of c in string s. Returns a pointer to last 
-	occurence */
-
 #include "libft.h"
 
+/* Locates last occurence of c in string s. Returns a pointer to last 
+	occurence */
 char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
