@@ -6,7 +6,7 @@
 #    By: malord <malord@student.42quebec.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/30 09:39:10 by malord            #+#    #+#              #
-#    Updated: 2022/04/19 14:06:17 by malord           ###   ########.fr        #
+#    Updated: 2022/04/19 16:48:51 by malord           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,23 +66,23 @@ BOBJS		=	${BSRCS:.c=.o}
 
 # Targets
 
-all: $(NAME)
+all: 			$(NAME)
 
 $(NAME): $(OBJS)
-	ar -crs $(NAME) $(OBJS)
+				ar -crs $(NAME) $(OBJS)
 
 # Removes objects
 clean:
-	$(RM) $(OBJS) $(BOBJS)
+				$(RM) $(OBJS) $(BOBJS)
 
 # Removes objects and executable
-fclean: clean
-	$(RM) $(NAME)
+fclean: 		clean
+				$(RM) $(NAME)
 
 # Removes objects and executable then remakes all
-re: fclean all
+re: 			fclean all
 
 # Bonus points
-bonus: $(NAME) $(BOBJS)
-	ar -crs $(NAME) $(BOBJS)
-	$(CC) -c $(CFLAGS) $(BSRCS)
+bonus: 			$(NAME) $(BOBJS)
+				ar -crs $(NAME) $(BOBJS)
+				$(CC) -c $(CFLAGS) $(BSRCS)
