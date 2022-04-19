@@ -6,7 +6,7 @@
 #    By: malord <malord@student.42quebec.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/30 09:39:10 by malord            #+#    #+#              #
-#    Updated: 2022/04/19 12:00:08 by malord           ###   ########.fr        #
+#    Updated: 2022/04/19 14:06:17 by malord           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,9 +66,6 @@ BOBJS		=	${BSRCS:.c=.o}
 
 # Targets
 
-.c.o:
-	${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
-
 all: $(NAME)
 
 $(NAME): $(OBJS)
@@ -89,6 +86,3 @@ re: fclean all
 bonus: $(NAME) $(BOBJS)
 	ar -crs $(NAME) $(BOBJS)
 	$(CC) -c $(CFLAGS) $(BSRCS)
-
-cleanbs: clean
-	$(RM) $(BOBJS)
