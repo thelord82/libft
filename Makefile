@@ -6,7 +6,7 @@
 #    By: malord <malord@student.42quebec.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/30 09:39:10 by malord            #+#    #+#              #
-#    Updated: 2022/04/19 11:03:23 by malord           ###   ########.fr        #
+#    Updated: 2022/04/19 12:00:08 by malord           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,7 @@ SRCS		=	ft_atoi.c				\
 				ft_strchr.c				\
 				ft_strdup.c				\
 				ft_striteri.c			\
-				fT_strjoin.c			\
+				ft_strjoin.c			\
 				ft_strlcat.c			\
 				ft_strlcpy.c			\
 				ft_strlen.c				\
@@ -65,29 +65,30 @@ OBJS		= 	${SRCS:.c=.o}
 BOBJS		=	${BSRCS:.c=.o}
 
 # Targets
-all: $(NAME) clean
+
+.c.o:
+	${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
+
+all: $(NAME)
 
 $(NAME): $(OBJS)
-	@ar -crs $(NAME) $(OBJS)
-
-$(OBJS) : $(SRCS)
-	@$(CC) -c $(CFLAGS) $(SRCS)
+	ar -crs $(NAME) $(OBJS)
 
 # Removes objects
 clean:
-	@$(RM) $(OBJS) $(BOBJS)
+	$(RM) $(OBJS) $(BOBJS)
 
 # Removes objects and executable
 fclean: clean
-	@$(RM) $(NAME)
+	$(RM) $(NAME)
 
 # Removes objects and executable then remakes all
 re: fclean all
 
 # Bonus points
 bonus: $(NAME) $(BOBJS)
-	@ar -crs $(NAME) $(BOBJS)
-	@$(CC) -c $(CFLAGS) $(BSRCS)
+	ar -crs $(NAME) $(BOBJS)
+	$(CC) -c $(CFLAGS) $(BSRCS)
 
 cleanbs: clean
-	@$(RM) $(BOBJS)
+	$(RM) $(BOBJS)
