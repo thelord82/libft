@@ -6,7 +6,7 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 09:42:31 by malord            #+#    #+#             */
-/*   Updated: 2022/04/19 08:32:29 by malord           ###   ########.fr       */
+/*   Updated: 2022/04/20 10:26:35 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,28 +23,26 @@ static int	ft_isspace(char c)
 // Converts in int value a string containing digits
 int	ft_atoi(const char *str)
 {
-	int	i;
 	int	nombre;
 	int	neg;
 
-	i = 0;
 	nombre = 0;
 	neg = 1;
-	if (str[i] == '\0')
+	if (!*str)
 		return (0);
-	while (str[i] && (ft_isspace(str[i]) == 1))
-		i++;
-	if (str[i] == '-')
+	while (*str && (ft_isspace(*str) == 1))
+		str++;
+	if (*str == '-')
 	{
 		neg = -neg;
-		i++;
+		str++;
 	}
-	else if (str[i] == '+')
-		i++;
-	while (str[i] && ft_isdigit(str[i]) == 1)
+	else if (*str == '+')
+		str++;
+	while (str && ft_isdigit(*str) == 1)
 	{
-		nombre = nombre * 10 + (str[i] - '0');
-		i++;
+		nombre = nombre * 10 + (*str - '0');
+		str++;
 	}
 	return (nombre * neg);
 }
