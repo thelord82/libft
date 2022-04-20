@@ -6,7 +6,7 @@
 #    By: malord <malord@student.42quebec.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/30 09:39:10 by malord            #+#    #+#              #
-#    Updated: 2022/04/19 16:48:51 by malord           ###   ########.fr        #
+#    Updated: 2022/04/19 21:07:06 by malord           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME		=	libft.a
 
 CC			=	gcc
 CFLAGS		=	-Wall -Werror -Wextra
-RM			=	rm -rf
+RM			=	rm -f
 
 SRCS		=	ft_atoi.c				\
 				ft_bzero.c				\
@@ -85,4 +85,4 @@ re: 			fclean all
 # Bonus points
 bonus: 			$(NAME) $(BOBJS)
 				ar -crs $(NAME) $(BOBJS)
-				$(CC) -c $(CFLAGS) $(BSRCS)
+				
