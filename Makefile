@@ -6,7 +6,7 @@
 #    By: malord <malord@student.42quebec.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/30 09:39:10 by malord            #+#    #+#              #
-#    Updated: 2022/04/21 15:41:37 by malord           ###   ########.fr        #
+#    Updated: 2022/06/13 12:55:52 by malord           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ RM			=	rm -f
 SRCS		=	ft_atoi.c				\
 				ft_bzero.c				\
 				ft_calloc.c				\
+				ft_free.c				\
 				ft_isalnum.c			\
 				ft_isalpha.c			\
 				ft_isascii.c			\
@@ -39,17 +40,21 @@ SRCS		=	ft_atoi.c				\
 				ft_strdup.c				\
 				ft_striteri.c			\
 				ft_strjoin.c			\
+				ft_strjoin_free.c		\
 				ft_strlcat.c			\
 				ft_strlcpy.c			\
 				ft_strlen.c				\
+				ft_strlen_until.c		\
 				ft_strmapi.c			\
 				ft_strncmp.c			\
+				ft_strncpy.c			\
 				ft_strnstr.c			\
 				ft_strrchr.c			\
 				ft_strtrim.c			\
 				ft_substr.c				\
 				ft_tolower.c			\
-				ft_toupper.c
+				ft_toupper.c			\
+				get_next_line.c			
 
 BSRCS		=	ft_lstlast.c			\
 				ft_lstadd_back.c		\

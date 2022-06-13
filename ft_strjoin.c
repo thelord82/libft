@@ -6,12 +6,11 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:23:50 by malord            #+#    #+#             */
-/*   Updated: 2022/04/25 16:30:27 by malord           ###   ########.fr       */
+/*   Updated: 2022/06/13 12:56:53 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 /* Allocates memory for the combination of s1 and s2, then returns pointer
 	to the new string containing the two*/

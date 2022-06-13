@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_strlen_until.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/12 11:52:08 by malord            #+#    #+#             */
-/*   Updated: 2022/06/13 13:28:00 by malord           ###   ########.fr       */
+/*   Created: 2022/06/13 12:51:53 by malord            #+#    #+#             */
+/*   Updated: 2022/06/13 13:29:37 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Adds a new element to the list
-t_list	*ft_lstnew(void *content)
+/* Returns the length of a string until a certain character. Length includes
+that character.*/
+size_t	ft_strlen_until(char *s, char c)
 {
-	t_list	*new;
+	size_t	i;
 
-	new = ft_calloc(1, sizeof(t_list));
-	if (!new)
-		return (NULL);
-	new->content = content;
-	new->next = NULL;
-	return (new);
+	i = 0;
+	if (!s)
+		return (0);
+	while (s[i] && s[i] != c)
+		i++;
+	if (!c)
+		return (i);
+	if (s[i] != c)
+		return (0);
+	else
+		return (i + 1);
 }

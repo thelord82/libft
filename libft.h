@@ -6,7 +6,7 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 08:40:35 by malord            #+#    #+#             */
-/*   Updated: 2022/04/19 09:32:30 by malord           ###   ########.fr       */
+/*   Updated: 2022/06/13 13:06:45 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@
 # include <ctype.h>
 # include <string.h>
 # include <stdint.h>
+# include <stdio.h>
+# include "get_next_line.h"
 
 typedef struct s_list
 {
@@ -64,15 +66,19 @@ void	*ft_memset(void *s, int c, size_t n);
 
 // char * return values functions
 
+char	*ft_free(void *ptr);
 char	*ft_itoa(int n);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s1);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin_free(char *s1, char const *s2);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*ft_strncpy(char *dest, char *src, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*get_next_line(int fd);
 
 // char ** return values functions
 
@@ -83,6 +89,7 @@ char	**ft_split(char const *str, char c);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlen(const char *s);
+size_t	ft_strlen_until(char *s, char c);
 
 // t_list return values functions
 

@@ -1,26 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/12 11:52:08 by malord            #+#    #+#             */
-/*   Updated: 2022/06/13 13:28:00 by malord           ###   ########.fr       */
+/*   Created: 2022/05/25 10:47:26 by malord            #+#    #+#             */
+/*   Updated: 2022/06/13 13:23:06 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
+# include <sys/types.h>
+# include <sys/uio.h>
+# include <fcntl.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include <limits.h>
+# include "libft.h"
 
-// Adds a new element to the list
-t_list	*ft_lstnew(void *content)
-{
-	t_list	*new;
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 5
+# endif
 
-	new = ft_calloc(1, sizeof(t_list));
-	if (!new)
-		return (NULL);
-	new->content = content;
-	new->next = NULL;
-	return (new);
-}
+char	*get_next_line(int fd);
+#endif

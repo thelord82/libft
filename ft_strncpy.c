@@ -1,26 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/12 11:52:08 by malord            #+#    #+#             */
-/*   Updated: 2022/06/13 13:28:00 by malord           ###   ########.fr       */
+/*   Created: 2022/06/13 12:54:24 by malord            #+#    #+#             */
+/*   Updated: 2022/06/13 13:30:04 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Adds a new element to the list
-t_list	*ft_lstnew(void *content)
+// Copies string src into string dest, while n bytes
+char	*ft_strncpy(char *dest, char *src, size_t n)
 {
-	t_list	*new;
+	size_t	i;
 
-	new = ft_calloc(1, sizeof(t_list));
-	if (!new)
-		return (NULL);
-	new->content = content;
-	new->next = NULL;
-	return (new);
+	i = 0;
+	if (!src)
+		return (dest);
+	while (src[i] != 0 && i < n)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = 0;
+	return (dest);
 }

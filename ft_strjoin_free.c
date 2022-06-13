@@ -1,26 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin_free.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/12 11:52:08 by malord            #+#    #+#             */
-/*   Updated: 2022/06/13 13:28:00 by malord           ###   ########.fr       */
+/*   Created: 2022/06/13 12:53:02 by malord            #+#    #+#             */
+/*   Updated: 2022/06/13 13:28:50 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Adds a new element to the list
-t_list	*ft_lstnew(void *content)
+// Does the same as strjoin but also frees s1
+char	*ft_strjoin_free(char *s1, char const *s2)
 {
-	t_list	*new;
+	size_t	tlen;
+	char	*nstr;
+	int		i;
 
-	new = ft_calloc(1, sizeof(t_list));
-	if (!new)
+	i = 0;
+	tlen = ft_strlen_until(s1, 0) + ft_strlen_until((char *)s2, 0) + 1;
+	nstr = ft_calloc((tlen), sizeof(char));
+	if (!nstr)
 		return (NULL);
-	new->content = content;
-	new->next = NULL;
-	return (new);
+	if (s1)
+	{
+		while (s1[i])
+			*nstr++ = s1[i++];
+		free (s1);
+	}
+	if (s2)
+		while (*s2)
+			*nstr++ = *s2++;
+	*nstr++ = '\0';
+	return (nstr - tlen);
 }
