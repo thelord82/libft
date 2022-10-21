@@ -36,3 +36,6 @@ build/Debug/ft_isalpha.o
 build/Debug/ft_isascii.o
 build/Debug/outDebug
 .vscode/c_cpp_properties.json
+include/.DS_Store
+src/.DS_Store
+.DS_Store
