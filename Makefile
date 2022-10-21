@@ -6,7 +6,7 @@
 #    By: malord <malord@student.42quebec.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/30 09:39:10 by malord            #+#    #+#              #
-#    Updated: 2022/10/20 20:26:43 by malord           ###   ########.fr        #
+#    Updated: 2022/10/20 20:39:33 by malord           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,7 @@ SRCS		=	src/add_string_first.c		\
 				src/add_string_last.c		\
 				src/free_double_array.c		\
 				src/ft_atoi.c				\
+				src/ft_atol.c				\
 				src/ft_bzero.c				\
 				src/ft_calloc.c				\
 				src/ft_free.c				\
