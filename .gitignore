@@ -39,3 +39,5 @@ build/Debug/outDebug
 include/.DS_Store
 src/.DS_Store
 .DS_Store
+.gitignore
+.vscode
