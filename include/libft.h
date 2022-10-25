@@ -6,7 +6,7 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 08:40:35 by malord            #+#    #+#             */
-/*   Updated: 2022/10/20 20:40:15 by malord           ###   ########.fr       */
+/*   Updated: 2022/10/25 16:08:27 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int		ft_toupper(int n);
 
 // int * return values functions
 
-int	*int_realloc(int *old_array, int old_size, int size);
+int		*int_realloc(int *old_array, int old_size, int size);
 
 // void return values functions
 
